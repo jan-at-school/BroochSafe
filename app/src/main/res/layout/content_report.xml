@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ReportActivity"
+    tools:showIn="@layout/activity_report">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<com.trafi.ratingseekbar.RatingSeekBar-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:rsb_max="10"-->
+            <!--app:rsb_active_color="#1F757B"-->
+            <!--app:rsb_active_text_color="#FFFFFF"-->
+            <!--app:rsb_inactive_color="#FAF8FA"-->
+            <!--app:rsb_inactive_text_color="#110711"-->
+            <!--app:rsb_text_size="14sp" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Intensity"/>
+        <com.trafi.ratingseekbar.RatingSeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/fab_margin"
+            app:rsb_max="10" />
+
+        <EditText
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:hint="Category"/>
+
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top|left"
+            android:background="@drawable/edit_text_border"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:inputType="textMultiLine"
+
+            android:hint="Details"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_centerInParent="true"
+                android:text="Submit"/>
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

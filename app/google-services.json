@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "27175374228",
+    "firebase_url": "https://broochsafe.firebaseio.com",
+    "project_id": "broochsafe",
+    "storage_bucket": "broochsafe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27175374228:android:69d7a2d562bf2aae",
+        "android_client_info": {
+          "package_name": "com.arifullahjan.broochsafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27175374228-thgnu87pqkluf0a26hm77u7dl2vt0qhe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKczgsFrW4WAcI03dYBKIpzvcSRxJiDTc"
+        },
+        {
+          "current_key": "AIzaSyC0P_r_GMVSjvFjLjfkr3P_Bmea3XWpPdA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
